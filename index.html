@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Meu premiero projeto Portfolio em CSS</title>
+    <link rel=" stylesheet" type="text/css" href="style.css"/>
+       
+</head>
+<body>
+    <header class="cabecalho">
+       <img class="cabecalho-image" src="logo22.jfif" alt="logo de adama">
+        
+        <nav class="cabecalho-menu">   
+                <a class="cabecalho-menu-item" href="apresntac.html"> Apresentação</a>
+              <a class="cabecalho-menu-item" href="objetivo.html"> Formação</a>
+            <a class="cabecalho-menu-item" href="listagem.html"> Experiência</a>
+          <a class="cabecalho-menu-item" href="contact1.html"> Fale Comigo</a>
+        </nav>
+    </header>
+                
+    <main class="conteudo">
+      <ul class="conteudo-fond-pag">
+        <li><img class="conteudo-fond" src="11.png" alt="fond do page" width="700" height="360"></li>
+        <li><img class="conteudo-fond" src="10.png" alt="fond do page" width="700" height="360"></li>
+      </ul>
+      <div class="box">
+        <div class="icon gitub">
+        <img src="gb.png" alt="logo-gitub" width="80" height="30"> </img> 
+        </div>
+        <p><input type="submit" value="Github" /></p>
+        <div class="icon facebook">
+          <img src="f.jpg" alt="logo-facebook" width="80" height="30"></img>
+        </div>
+            <p><input type="submit" value="Facebook" /></p>
+      </div>
+      <h1 class="the index">
+      Github API
+      <hr/>
+      <ul></ul>
+      </h1>
+      </main>
+      <script>
+         
+
+function criaLinha(api){
+
+}
+function main(){
+    let data =fazGet("https://api.github.com/users/diengadama/repos")
+     let usuarios =JSON.parse(data);
+apis.forEach(element => {
+    let linha =criaLinha(element);
+    tabela.appendChild(linha);
+    
+});
+}
+   
+            (async function(){
+                try{
+                    const headers ={
+                        'content-Type':'application/json',
+                    };
+                        const init ={
+                        headers: headers,
+
+                    };
+                    
+                const response =await fetch('https://api.github.com/users/diengadama/repos')
+        
+                const jsonData =await response.json();
+                for(const post of jsonData){
+                    console.log(post);
+                }
+                console.log(jsonData);
+                }catch (e){
+                    console.log('DEU ERRO')
+                }
+            })();
+                    
+      </script>
+    </body>
+    </html>

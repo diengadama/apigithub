@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> Meu premiero projeto Portfolio em CSS</html></title>
+    <link rel=" stylesheet" type="text/css" href="style.css"/>
+       
+</head>
+<body>
+    <header class="cabecalho">
+       <img class="cabecalho-image" src="logo22.jfif" alt="logo de adama">
+        
+        <nav class="cabecalho-menu">   
+                <li><a class="cabecalho-menu-item" href="apresntac.html"> Apresentação</a></li>
+              <li><a class="cabecalho-menu-item" href="objetivo.html"> Formação</a></li>
+            <li><a class="cabecalho-menu-item" href="listagem.html"> Experiência</a></li>
+          <li><a class="cabecalho-menu-item" href="contact1.html"> Fale Comigo</a></li>
+        </nav>
+    </header>
+                
+    <main class="conteudo">
+      <ul class="conteudo-fond-pag">
+        <li><img class="conteudo-fond" src="11.png" alt="fond do page" width="700" height="360"></li>
+        <li><img class="conteudo-fond" src="10.png" alt="fond do page" width="700" height="360"></li>
+      </ul>
+      <div class="box">
+        <div class="icon gitub">
+        <img src="gb.png" name="logo-gitub" width="80" height="30"> </img>  
+        </div>
+        <p><p><input type="submit" value="Github" /></p></p>
+        <div class="icon facebook">
+          <img src="f.jpg" name="logo-facebook" width="80" height="30"></img>
+        </div>
+            <p><input type="submit" value="Facebook" /></p>
+      </div>
+      <h1 class="the index">
+      Github API
+      <hr/>
+      <ul></ul>
+      </h1>
+      </main>
+      <script src="index.js"></script>
+    </body>
+    </html>
